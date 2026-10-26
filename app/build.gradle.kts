@@ -53,18 +53,21 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
     
-    // Jetpack Compose BOM (Bill of Materials)
+    // Jetpack Compose BOM
     implementation(platform("androidx.compose:compose-bom:2024.02.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
 
-    // Jetpack Compose for TV (Diseñado para mandos a distancia y D-pad)
+    // Jetpack Compose for TV (Navegación D-Pad)
     implementation("androidx.tv:tv-foundation:1.0.0-alpha10")
     implementation("androidx.tv:tv-material:1.0.0-alpha10")
 
-    // Media3 / ExoPlayer (Para reproducción de vídeo IPTV)
+    // Media3 / ExoPlayer
     implementation("androidx.media3:media3-exoplayer:1.3.0")
     implementation("androidx.media3:media3-ui:1.3.0")
+
+    // Parsing JSON para API Xtream Codes
+    implementation("com.google.code.gson:gson:2.10.1")
 }

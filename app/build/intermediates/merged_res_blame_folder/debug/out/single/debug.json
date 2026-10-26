@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.micanaliptv.app-merged_res-40:/drawable_logo.png.flat",
+        "source": "com.micanaliptv.app-main-42:/drawable/logo.png"
+    },
+    {
+        "merged": "com.micanaliptv.app-merged_res-40:/drawable_banner.png.flat",
+        "source": "com.micanaliptv.app-main-42:/drawable/banner.png"
+    }
+]

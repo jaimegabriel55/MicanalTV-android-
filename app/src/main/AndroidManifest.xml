@@ -1,10 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Permisos necesarios para IPTV (Internet y estado de red) -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!-- Declaramos que esta app es para Android TV (No requiere pantalla táctil) -->
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -15,6 +13,9 @@
     <application
         android:allowBackup="true"
         android:label="MiCanalTV"
+        android:banner="@drawable/banner"
+        android:icon="@drawable/banner"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.NoActionBar">
         
@@ -23,7 +24,6 @@
             android:exported="true"
             android:theme="@android:style/Theme.Material.NoActionBar">
             
-            <!-- Esto hace que aparezca en el cajón de apps de la TV Box -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
